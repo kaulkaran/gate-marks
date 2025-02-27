@@ -10,7 +10,7 @@ connectDB();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: "https://gate-marks-gen.vercel.app/", // Allow only your frontend
+    origin: ["https://gate-marks-gen.vercel.app/", "*"], // Allow only your frontend
     methods: "GET,POST,PUT,DELETE",
     credentials: true // If using cookies/authentication
 }));
