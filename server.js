@@ -10,7 +10,7 @@ connectDB();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ["https://willowy-cheesecake-99378c.netlify.app/", "http://localhost:5173"], // Allow only your frontend
+    origin: ["https://willowy-cheesecake-99378c.netlify.app/", "https://willowy-cheesecake-99378c.netlify.app/404"], // Allow only your frontend
     methods: "GET,POST,PUT,DELETE",
 }));
 
